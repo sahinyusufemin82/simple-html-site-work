@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Şifre ile Giriş</title>
+</head>
+<body>
+  <h2>Şifre ile Giriş</h2>
+  <input type="password" id="password" placeholder="Şifreyi girin">
+  <button onclick="checkPassword()">Giriş Yap</button>
+
+  <script>
+    function checkPassword() {
+      const correctPassword = "password"; // Buraya kendi şifreni yaz
+      const userPassword = document.getElementById("password").value;
+
+      if (userPassword === correctPassword) {
+        // Doğru şifre girilirse istediğin linke yönlendir
+        window.location.href = "https://github.com/sahinyusufemin82";
+      } else {
+        // Yanlışsa kendi sayfana yönlendir
+        window.location.href = "css.html";
+      }
+    }
+  </script>
+</body>
+</html>
